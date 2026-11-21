@@ -1,0 +1,35 @@
+{
+    "name": "caravelpay/caravel-laravel",
+    "description": "Caravel Pay for Laravel: hosted card checkouts paid out in USDC on Polygon, signed webhooks verified by middleware, events for paid/underpaid/expired/review.",
+    "type": "library",
+    "version": "1.2.1",
+    "license": "MIT",
+    "keywords": ["laravel", "payments", "usdc", "polygon", "webhooks", "caravel pay"],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CaravelPay\\Laravel\\": "src/"
+        },
+        "files": [
+            "lib/caravel-php/autoload.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CaravelPay\\Laravel\\CaravelServiceProvider"
+            ],
+            "aliases": {
+                "Caravel": "CaravelPay\\Laravel\\Facades\\Caravel"
+            }
+        }
+    }
+}
