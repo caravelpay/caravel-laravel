@@ -20,7 +20,7 @@ use CaravelPay\Http\TransportInterface;
  */
 class Caravel
 {
-    public const VERSION = '1.2.1';
+    public const VERSION = '1.2.2';
 
     private Credentials $credentials;
     /** @var array<string, mixed> */

@@ -15,7 +15,7 @@ the token the buyer paid with), minus the 2% Caravel fee. The package wraps the 
   `CheckoutExpired`, `CheckoutReview`;
 - `php artisan caravel:connect`, which gets your merchant id and secret.
 
-Laravel 10, 11 or 12 on PHP 8.1+ with `curl` and `json`.
+Laravel 10, 11, 12 or 13 on PHP 8.1+ with `curl` and `json`.
 
 ## Install
 
@@ -31,7 +31,7 @@ Or install the release zip as a Composer artifact:
 ```sh
 mkdir -p artifacts && cp caravel-pay-laravel.zip artifacts/
 composer config repositories.caravelpay artifact ./artifacts
-composer require caravelpay/caravel-laravel:1.2.1
+composer require caravelpay/caravel-laravel:1.2.2
 ```
 
 Package discovery registers `CaravelPay\Laravel\CaravelServiceProvider` and the `Caravel` alias.
